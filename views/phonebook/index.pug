@@ -1,15 +1,22 @@
+extends ../layout/index.pug
+block content
+    .container.mt-5
+        .d-flex.justify-content-between
+            h2 List Phonebook
+            form(action="/phonebook/search", method="get")
+                input(type="text" name="q")
+                button.btn.btn-outline-primary.ml-2 Search
 
-h2 List Phonebook
+        table.table 
+            tr
+                th Name
+                th Phone number
+                th Active
+            each person in list
+                tr
+                    td= person.name
+                    td= person.phone
+                    td 
+                        a(href="/phonebook/view/" +person.id) View
 
-form(action="/phonebook/search", method="get")
-    input(type="text" name="q")
-    button Search
-
-ul 
-    each person in list
-        li
-            span= person.name
-            span= person.phone
-            a(href="/phonebook/view/" +person.id) View
-
-a(href="/phonebook/viewAdd") Add new
+        a.btn.btn-primary(href="/phonebook/viewAdd") Add new

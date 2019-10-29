@@ -1,8 +1,10 @@
-h2 Person
-img(src="", alt="")
+extends ../layout/index.pug
+block content
+    h2 Person
+    img(src="", alt="")
 
-p Name: 
-    span= person.name
+    p Name: 
+        span= person.name
 
-p Phone number: 
-    span= person.phone
+    p Phone number: 
+        span= person.phone

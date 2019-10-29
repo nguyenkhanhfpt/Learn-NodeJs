@@ -1,9 +1,13 @@
-h2 Create a new person 
+extends ../layout/index.pug
+block content
 
-form(action="/phonebook/add", method="POST")
-    lable(for="name") Name
-    input#name.form-control(type="text" name="name")
-    lable(for="phone") Phone number
-    input#phone.form-control(type="text" name="phone")
-    button Add
+    .container
+        h2 Create a new person 
+
+        form(action="/phonebook/add", method="POST")
+            lable(for="name") Name
+            input#name.form-control(type="text" name="name")
+            lable(for="phone") Phone number
+            input#phone.form-control(type="text" name="phone")
+            button.btn.btn-primary.mt-2 Add New
 
