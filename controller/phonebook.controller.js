@@ -5,3 +5,15 @@ module.exports.index = (req, res) => {
         list: db.get('list').value()
     });
 };
+
+module.exports.search = (req, res) => {
+    let valueQuery = req.query.q;
+
+    let listFilter = db.get('list').value().filter((person) => {
+        return person.name.toLowerCase().indexOf(valueQuery.toLowerCase()) !== -1;
+    });
+
+    res.render('phonebook/index', {
+        list: listFilter
+    });
+};

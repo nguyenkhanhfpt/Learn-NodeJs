@@ -5,6 +5,7 @@ const controller = require('../controller/phonebook.controller');
 
 router.get('/', controller.index);
 
+router.get('/search', controller.search);
 
 
 
