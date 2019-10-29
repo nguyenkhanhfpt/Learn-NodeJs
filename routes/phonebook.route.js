@@ -9,6 +9,7 @@ router.get('/search', controller.search);
 
 router.get('/viewAdd', controller.viewAdd);
 
+router.post('/add', controller.addPerson);
 
 
 

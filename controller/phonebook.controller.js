@@ -1,4 +1,5 @@
 const db = require('../db');
+const shortid = require('shortid');
 
 module.exports.index = (req, res) => {
     res.render('phonebook/index', {
@@ -20,4 +21,12 @@ module.exports.search = (req, res) => {
 
 module.exports.viewAdd = (req, res) => {
     res.render('phonebook/viewAdd');
+};
+
+module.exports.addPerson = (req, res) => {
+    req.body.id = shortid.generate();
+
+    db.get('list').push(req.body).write();
+
+    res.redirect('/phonebook');
 };
