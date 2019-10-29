@@ -30,3 +30,13 @@ module.exports.addPerson = (req, res) => {
 
     res.redirect('/phonebook');
 };
+
+module.exports.viewPerson = (req, res) => {
+    let id = req.params.ID;
+
+    let viewPerson = db.get('list').find({ id: id }).value();
+
+    res.render('phonebook/viewPerson', {
+        person : viewPerson
+    });
+};

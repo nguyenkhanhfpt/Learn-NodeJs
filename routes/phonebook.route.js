@@ -11,6 +11,8 @@ router.get('/viewAdd', controller.viewAdd);
 
 router.post('/add', controller.addPerson);
 
+router.get('/view/:ID', controller.viewPerson);
+
 
 
 module.exports = router;

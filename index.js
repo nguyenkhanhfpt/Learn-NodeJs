@@ -4,8 +4,8 @@ const port = 3000;
 
 var listPhonebook = require('./routes/phonebook.route');
 
-app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 app.set('view engine', 'pug');
 app.set('views', './views');
