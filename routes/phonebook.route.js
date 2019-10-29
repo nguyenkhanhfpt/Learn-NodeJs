@@ -1,13 +1,10 @@
 const express = require('express');
 const router = express.Router();
 
-const db = require('../db');
+const controller = require('../controller/phonebook.controller');
 
-router.get('/', (req, res) => {
-    res.render('phonebook/index', {
-        list: db.get('list').value()
-    });
-});
+router.get('/', controller.index);
+
 
 
 
