@@ -4,10 +4,14 @@ block content
     .container
         h2 Create a new person 
 
+        if error
+            each err in error
+                .alert.alert-danger=err
+
         form(action="/phonebook/add", method="POST")
             lable(for="name") Name
-            input#name.form-control(type="text" name="name")
+            input#name.form-control(type="text" name="name" value= values ? values.name : "")
             lable(for="phone") Phone number
-            input#phone.form-control(type="text" name="phone")
+            input#phone.form-control(type="text" name="phone" value= values ? values.phone : "")
             button.btn.btn-primary.mt-2 Add New
 
