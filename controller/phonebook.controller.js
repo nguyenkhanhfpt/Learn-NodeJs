@@ -17,3 +17,7 @@ module.exports.search = (req, res) => {
         list: listFilter
     });
 };
+
+module.exports.viewAdd = (req, res) => {
+    res.render('phonebook/viewAdd');
+};
