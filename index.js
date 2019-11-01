@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 
 var listPhonebook = require('./routes/phonebook.route');
+var login = require('./routes/login.route');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -17,5 +18,6 @@ app.get('/', (req, res) => {
 });
 
 app.use('/phonebook', listPhonebook);
+app.use('/login', login)
 
 app.listen(port, () => console.log('Server listen on port: ' +port));
