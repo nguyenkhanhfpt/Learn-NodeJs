@@ -8,12 +8,15 @@ block content
                 button.btn.btn-outline-primary.ml-2 Search
 
         table.table 
-            tr
+            tr  
+                th Avatar
                 th Name
                 th Phone number
                 th Active
             each person in list
                 tr
+                    td 
+                        img(src= person.avatar, width="60" height="40")
                     td= person.name
                     td= person.phone
                     td 

@@ -25,6 +25,7 @@ module.exports.viewAdd = (req, res) => {
 
 module.exports.addPerson = (req, res) => {
     req.body.id = shortid.generate();
+    req.body.avatar = req.file.path.split('\\').slice(1).join('/');
 
     db.get('list').push(req.body).write();
 

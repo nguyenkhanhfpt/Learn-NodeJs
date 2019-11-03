@@ -8,10 +8,15 @@ block content
             each err in error
                 .alert.alert-danger=err
 
-        form(action="/phonebook/add", method="POST")
-            lable(for="name") Name
-            input#name.form-control(type="text" name="name" value= values ? values.name : "")
-            lable(for="phone") Phone number
-            input#phone.form-control(type="text" name="phone" value= values ? values.phone : "")
+        form(action="/phonebook/add", method="POST", enctype="multipart/form-data")
+            .form-group
+                lable(for="name") Name
+                input#name.form-control(type="text" name="name" value= values ? values.name : "")
+            .form-group
+                lable(for="phone") Phone number
+                input#phone.form-control(type="text" name="phone" value= values ? values.phone : "")
+            .form-group
+                lable(for="avatar") Avatar
+                input#avatar.form-control-file(type="file" name="avatar")
             button.btn.btn-primary.mt-2 Add New
 
