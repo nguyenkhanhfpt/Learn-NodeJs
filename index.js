@@ -5,6 +5,7 @@ const cookieParser = require('cookie-parser');
 
 const listPhonebook = require('./routes/phonebook.route');
 const login = require('./routes/login.route');
+const productsRouter = require('./routes/products.router');
 const middlewareLogin = require('./validate/login.middleware');
 
 app.use(express.json());
@@ -20,6 +21,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/phonebook',middlewareLogin.checkCookies, listPhonebook);
-app.use('/login', login)
+app.use('/login', login);
+app.use('/products', productsRouter);
 
 app.listen(port, () => console.log('Server listen on port: ' +port));

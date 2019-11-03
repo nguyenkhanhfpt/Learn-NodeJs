@@ -1,0 +1,28 @@
+extends ../layout/index
+block content
+
+    .container
+        h2.my-4 Products
+        .row
+            each product in products  
+                .col-6.col-sm-4.col-lg-3.pb-3
+                    .card
+                        img(src= product.images, alt="" width="100%" )
+                        .card-body
+                            h5.card-title= product.name
+                            p.card-text With supporting text below as a natural lead-in to additional content.
+                            a.btn.btn-primary(href='#') Go somewhere
+
+        nav.d-flex.justify-content-center(aria-label='Page navigation example')
+            ul.pagination
+                li.page-item
+                a.page-link(href='/products?page=' +before, aria-label='Previous')
+                    span(aria-hidden='true') &laquo;
+                    
+                while startPar <= endPar
+                    li.page-item
+                    a.page-link(href='/products?page=' +startPar)= startPar++
+
+                li.page-item
+                a.page-link(href='/products?page=' +next, aria-label='Next')
+                    span(aria-hidden='true') &raquo;

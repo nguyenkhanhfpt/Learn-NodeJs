@@ -23,5 +23,137 @@
       "password": "827ccb0eea8a706c4c34a16891f84e7b",
       "id": "dowQt5Nd"
     }
+  ],
+  "products": [
+    {
+      "id": "fbc4bda4-1985-4369-ab3a-c9f440a26e24",
+      "name": "Y-find",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "9e684d9b-c74d-4bda-9087-1601c1202376",
+      "name": "Bytecard",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "73d7eb91-2667-44e9-8e1b-a28094f9904c",
+      "name": "Asoka",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "e1a77566-2965-4158-844f-4b1d0fe93f69",
+      "name": "Prodder",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "196d3210-9218-4391-a793-09d7c3a563ce",
+      "name": "Job",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "b77eb853-371f-4b0a-ab4b-f268823cedc7",
+      "name": "It",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "a6bfd29b-275f-44e8-8310-206b486a3cb1",
+      "name": "Mat Lam Tam",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "1fbbda9a-58f7-47e4-80a7-61de5f2ae7c7",
+      "name": "Y-Solowarm",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "df7aa078-bec3-4d4b-9f0e-181023344dc4",
+      "name": "Otcom",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "d060560f-b051-47b9-9010-09ed58b3df1e",
+      "name": "Fix San",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "8186ce3c-e8c8-4ae6-8926-612b856e512f",
+      "name": "Tempsoft",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "02839034-39d4-4410-8d1e-3645c07f2a84",
+      "name": "Zontrax",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "5b31dde0-1b99-4e69-bef0-e86113e8dbee",
+      "name": "Namfix",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "5f9cdba1-0a82-49d8-b464-a54d0ddd2232",
+      "name": "Bytecard",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "259ed37e-59f0-4882-908c-f27d640de3b9",
+      "name": "Rank",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "39a9d6c8-f099-48cc-8655-d72eca1ad8ad",
+      "name": "Alpha",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "ca0fd413-32cb-454f-9cfb-49bf0ac978e5",
+      "name": "Tampflex",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "a08a5439-19eb-4e6f-92bc-0cdbe9a5637f",
+      "name": "Fintone",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "16d4a29c-437f-4bd2-9ed0-0cd62763fe8c",
+      "name": "Zamit",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "2bcd74cc-7cde-48b0-9669-35329149d83d",
+      "name": "Job",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "9e54f8ed-b226-4c34-91f5-ad0a1e291b7c",
+      "name": "Zontrax",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "ce84de76-3897-4db7-89e0-4258e87b4a8d",
+      "name": "Stringtough",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "b837ce8d-6dc5-49aa-81b2-d25988e5e19b",
+      "name": "Voltsillam",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "17adf9d0-ab5f-4b57-b283-fc1aab234b3e",
+      "name": "Ventosanzap",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "8ca23052-37d3-4aa5-aa0c-079a8cf67eda",
+      "name": "Matsoft",
+      "images": "https://picsum.photos/200/150"
+    },
+    {
+      "id": "6886a103-0fa0-4ea9-a9a4-05dd78c1173f",
+      "name": "Alpha",
+      "images": "https://picsum.photos/200/150"
+    }
   ]
 }
